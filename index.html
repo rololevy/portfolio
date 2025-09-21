@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio · Orlando Aguilera</title>
+  <meta name="description" content="Portfolio básico de Orlando Aguilera: proyectos, conocimientos y contacto." />
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="preload" as="image" href="assets/img/fotoPortfolio.jpg" />
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+
+  <!-- <link rel="main.js" href="main.js"> -->
+
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="site-header" aria-label="Barra de navegación">
+    <div class="container nav-wrap">
+      <!-- <a href="#home" class="brand" aria-label="Ir al inicio">Orlando</a> -->
+
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <ul class="nav-menu">
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#skills">Conocimientos</a></li>
+          <li><a href="#projects">Algunos Proyectos</a></li>
+          <li><a href="#social">Redes</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-content">
+          <img
+            class="profile-image"
+            src="assets/img/fotoPortfolio.jpg"
+            alt="Foto de Orlando Aguilera"
+            width="200" height="200" loading="eager"
+          />
+          <div class="hero-text">
+            <h1 id="hero-title">Hola, soy Orlando</h1>
+            <p>Entusiasta del mundo de los datos y las tecnologías involucradas. Desarrollo scripts y dashboards para análisis de datos en el sector financiero.</p>
+            <!-- <a href="#projects" class="cta-button">Ver mis proyectos</a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title">Sobre mí</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Actualmente curso la Tecnicatura en Programación. Trabajo con
+              datos y desarrollo scripts en una entidad financiera, me dedico a hacer integraciones de datos
+              y estoy armando proyectos de dashboards con Python/Streamlit.
+            </p>
+            <p>
+              Tengo experiencia construyendo bots conversacionales y no conversacionales, así como
+              desarrollando soluciones automatizadas para el procesamiento y análisis de información financiera.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <div class="container">
+        <h2 id="skills-title">Conocimientos</h2>
+        <div class="skills-grid">
+          <div class="skill">
+            <div class="skill-top"><span>Python</span><span>80%</span></div>
+            <div class="skill-bar"><div class="skill-progress" style="--w:70%"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-top"><span>C++</span><span>75%</span></div>
+            <div class="skill-bar"><div class="skill-progress" style="--w:85%"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-top"><span>SQL</span><span>85%</span></div>
+            <div class="skill-bar"><div class="skill-progress" style="--w:75%"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title">Proyectos</h2>
+        <div class="projects-grid">
+            <article class="project-card github-card">
+            <div class="project-img" aria-hidden="true">
+                <svg width="96" height="96" viewBox="0 0 24 24" aria-hidden="true" role="img">
+                <path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.35-1.77-1.35-1.77-1.1-.76.08-.74.08-.74 1.22.09 1.86 1.26 1.86 1.26 1.08 1.85 2.83 1.32 3.52 1.01.11-.78.42-1.32.76-1.62-2.67-.31-5.48-1.34-5.48-5.96 0-1.32.47-2.4 1.24-3.25-.12-.31-.54-1.56.12-3.26 0 0 1.01-.32 3.3 1.24a11.5 11.5 0 0 1 6.01 0c2.29-1.56 3.3-1.24 3.3-1.24.66 1.7.24 2.95.12 3.26.77.85 1.24 1.93 1.24 3.25 0 4.63-2.81 5.64-5.49 5.95.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.82.58A12 12 0 0 0 12 .5Z"/>
+                </svg>
+            </div>
+            <div class="project-body">
+                <h3>Mi GitHub</h3>
+                <p>Repos y demos públicas. Algunos proyectos están privados por trabajo.</p>
+                <div class="project-tags">
+                <span>Repos públicos</span><span>Snippets</span>
+                </div>
+                <div class="project-actions">
+                <a class="btn-primary" href="https://github.com/rololevy" target="_blank" rel="noopener">Ver perfil</a>
+                <a class="btn-secondary" href="https://github.com/rololevy?tab=repositories" target="_blank" rel="noopener">Repos</a>
+                </div>
+            </div>
+            </article>
+
+    </section>
+
+    <section id="social" class="section social" aria-labelledby="social-title">
+      <div class="container">
+        <h2 id="social-title">Redes</h2>
+        <div class="social-links">
+          <a class="social-link" href="https://github.com/rololevy" target="_blank" rel="noopener" aria-label="GitHub de Orlando">
+            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.35-1.77-1.35-1.77-1.1-.76.08-.74.08-.74 1.22.09 1.86 1.26 1.86 1.26 1.08 1.85 2.83 1.32 3.52 1.01.11-.78.42-1.32.76-1.62-2.67-.31-5.48-1.34-5.48-5.96 0-1.32.47-2.4 1.24-3.25-.12-.31-.54-1.56.12-3.26 0 0 1.01-.32 3.3 1.24a11.5 11.5 0 0 1 6.01 0c2.29-1.56 3.3-1.24 3.3-1.24.66 1.7.24 2.95.12 3.26.77.85 1.24 1.93 1.24 3.25 0 4.63-2.81 5.64-5.49 5.95.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.82.58A12 12 0 0 0 12 .5Z"/>
+            </svg>
+            <span>GitHub</span>
+          </a>
+
+          <a class="social-link" href="https://www.linkedin.com/in/orlando-aguilera/" target="_blank" rel="noopener" aria-label="LinkedIn de Orlando">
+            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.45 20.45h-3.56v-5.62c0-1.34-.02-3.06-1.86-3.06-1.86 0-2.15 1.45-2.15 2.95v5.73H9.32V9h3.42v1.56h.05c.47-.89 1.62-1.83 3.34-1.83 3.57 0 4.23 2.35 4.23 5.41v6.31zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/>
+            </svg>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title">Contacto</h2>
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="field">
+            <label for="name">Nombre completo</label>
+            <input 
+              id="name" 
+              name="name" 
+              type="text"
+              required
+              minlength="2"
+              maxlength="50"
+              placeholder="Ingresa tu nombre completo"
+              autocomplete="name"
+            >
+            <div class="field-error">Por favor, ingresa tu nombre (mínimo 2 caracteres).</div>
+          </div>
+          
+          <div class="field">
+            <label for="email">Correo electrónico</label>
+            <input 
+              id="email" 
+              type="email" 
+              name="email" 
+              required
+              placeholder="tu@email.com"
+              autocomplete="email"
+            >
+            <div class="field-error">Por favor, ingresa un correo electrónico válido.</div>
+          </div>
+          
+          <div class="field">
+            <label for="subject">Asunto</label>
+            <input 
+              id="subject" 
+              name="subject" 
+              type="text"
+              required
+              minlength="3"
+              maxlength="100"
+              placeholder="¿Sobre qué quieres hablar?"
+            >
+            <div class="field-error">Por favor, ingresa un asunto (mínimo 3 caracteres).</div>
+          </div>
+          
+          <div class="field">
+            <label for="message">Mensaje</label>
+            <textarea 
+              id="message" 
+              name="message" 
+              required
+              minlength="10"
+              maxlength="1000"
+              rows="5"
+              placeholder="Escribe tu mensaje aquí... (mínimo 10 caracteres)"
+            ></textarea>
+            <div class="field-error">Por favor, escribe tu mensaje (mínimo 10 caracteres).</div>
+          </div>
+          
+          <button type="submit" class="btn-primary">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small> 2025 · Orlando Aguilera</small>
+    </div>
+  </footer>
